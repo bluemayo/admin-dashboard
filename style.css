@@ -72,6 +72,7 @@ main {
     width: 100%;
     display: grid;
     grid-template: 1fr 1fr / 3fr 2fr;
+    box-shadow: 0 -1px 5px 2px #888;
 }
 
 #search {
@@ -108,5 +109,44 @@ main {
     }
     p:last-child{
         font-size: 1.5rem;
+    }
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #bell {
+        width: 30%;
+        justify-self: end;
+    }
+    #cube {
+        width: 60%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        border: 1px solid #888;
+    }
+    .item1,
+    .item2 {
+        flex-basis: 20%;
+        display: grid;
+        place-items: center;
+    }
+    .item3 {
+        flex-basis: 40%;
+    }
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    button {
+        background-color: #9cd08f;
+        width: 70%;
+        height: 40%;
+        font-family: roboto;
+        border-radius: 1rem;
+        border: 1px solid #888;
     }
 }
